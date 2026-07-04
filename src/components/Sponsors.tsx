@@ -49,23 +49,23 @@ const Sponsors = () => {
 
         {/* Logos */}
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-y-16 md:gap-y-20 gap-x-10 md:gap-x-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
 
           {sponsors.map((item, index) => (
 
             <div
               key={index}
-              className="flex items-center gap-5 group"
+              className="flex flex-col sm:flex-row items-center text-center sm:text-left gap-4 group"
             >
 
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-[130px] h-[130px] object-contain grayscale group-hover:grayscale-0 transition duration-300"
+                className="w-20 h-20 sm:w-[90px] sm:h-[90px] object-contain grayscale group-hover:grayscale-0 transition"
               />
 
               <h3
-                className="text-gray-300 uppercase text-[28px]"
+                className="text-gray-300 uppercase text-xl sm:text-2xl lg:text-[28px] break-words"
                 style={{ fontFamily: "Oxanium" }}
               >
                 {item.title}
